@@ -1,0 +1,13 @@
+# Заголовки для Netlify и Cloudflare Pages — формат у них общий.
+# X-Robots-Tag: демо не должно попасть в поиск раньше настоящего домена.
+# GitHub Pages этот файл не читает — там noindex держит <meta name="robots"> в HTML.
+# При запуске на домене клиента удалить и строку, и meta.
+
+/*
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
+  X-Robots-Tag: noindex
+
+/fonts/*
+  Cache-Control: public, max-age=31536000, immutable

@@ -1,0 +1,8 @@
+# Демо живёт на Netlify: *.pages.dev у Белтелекома не открывается.
+[build]
+  publish = "."
+
+[functions]
+  directory = "netlify/functions"
+  # esbuild собирает функцию в один файл вместе с functions/lead.js (ESM).
+  node_bundler = "esbuild"
