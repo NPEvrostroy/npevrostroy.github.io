@@ -46,7 +46,7 @@ assert.ok(msg.includes('a &amp; b'));
 assert.ok(msg.includes('Согласия'), 'в заявке остаётся отметка о согласиях');
 
 // ─── CORS: копию на GitHub Pages пускаем, чужие сайты — нет ───
-assert.ok(cors('https://nikita2000zezulin-blip.github.io')['Access-Control-Allow-Origin']);
+assert.ok(cors('https://npevrostroy.github.io')['Access-Control-Allow-Origin']);
 assert.ok(!cors('https://evil.example')['Access-Control-Allow-Origin'], 'чужой домен не пускаем');
 assert.ok(!cors(null)['Access-Control-Allow-Origin'], 'запрос без Origin (curl, свой домен)');
 

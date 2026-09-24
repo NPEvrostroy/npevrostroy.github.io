@@ -69,7 +69,7 @@ export function format(lead, siteName) {
 }
 
 // Копию сайта отдаёт GitHub Pages, а функция живёт на Netlify — оттуда запрос кросс-доменный.
-const ALLOWED = ['https://nikita2000zezulin-blip.github.io'];
+const ALLOWED = ['https://npevrostroy.github.io'];
 export const cors = (origin) =>
   ALLOWED.includes(origin) ? { 'Access-Control-Allow-Origin': origin, 'Vary': 'Origin' } : {};
 
